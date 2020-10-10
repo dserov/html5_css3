@@ -80,12 +80,11 @@ table {
 }
 
 .h2 {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  color: @white;
+  color: @black;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
 }
 
 .h3 {
@@ -104,6 +103,7 @@ table {
 
 header.container {
   display: flex;
+  margin-bottom: 120px;
 }
 
 .logo-menu {
@@ -312,7 +312,6 @@ header.container {
       background-color: #fff;
     }
     &-link {
-      display: block;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -323,5 +322,129 @@ header.container {
 
 .rasporka {
   flex-grow: 1;
+}
+
+/* main content */
+
+.about {
+  margin-bottom: 120px;
+  &__title {
+    padding: 0 1058px 72px 80px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__video {
+    width: 708px;
+    height: 616px;
+    padding: 105px 50px 105px 80px;
+    background-color: @blue-dark;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      color: #fff;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    &-text {
+      flex-grow: 1;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+  }
+  &__slider {
+    margin: 0px 85px;
+    display: flex;
+    justify-content: space-between;
+    width: 562px;
+    position: relative;
+    &-left {
+      width: 270px;
+      border-style: solid;
+      border-width: 8px 0 8px 8px;
+      border-color: @grey-dark1;
+    }
+    &-right {
+      width: 270px;
+      border-style: solid;
+      border-width: 8px 8px 8px 0;
+      border-color: @blue-light;
+    }
+    &-content {
+      width: 450px;
+      height: 524px;
+      position: absolute;
+      top: 48px;
+      left: 55px;
+      background-image: url("../img/about-slide1.png");
+    }
+    &-controls {
+      margin: 388px 20px 0 4px;
+      display: flex;
+      justify-content: space-between;
+      &-item {
+        width: 48px;
+        height: 48px;
+        background-color: #fff;
+      }
+      &-link {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__more {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 165px 120px 260px;
+    &-items {
+      height: 100px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      vertical-align: bottom;
+      display: flex;
+      align-items: flex-end;
+      &--icon-wind {
+        background: url("../img/wind.png") no-repeat center top;
+      }
+      &--icon-lift {
+        background: url("../img/lift.png") no-repeat center top;
+      }
+      &--icon-house {
+        background: url("../img/house.png") no-repeat center top;
+      }
+    }
+  }
+}
+
+.territory {
+  margin: 0 80px 72px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 72px;
+    &-item {
+      width: 48%;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.04em;
+    }
+  }
 }
 
