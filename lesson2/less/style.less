@@ -96,6 +96,10 @@ table {
   color: @black;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -444,6 +448,32 @@ header.container {
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 0.04em;
+    }
+  }
+  &__gallery {
+    //display: flex;
+    //flex-flow: row wrap;
+    margin: -11px;
+    &-image {
+      float: left;
+      margin: 11px;
+      position: relative;
+      &-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        background: @blue-dark;
+        opacity: 0.7;
+        padding: 4px 16px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }

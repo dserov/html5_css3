@@ -157,6 +157,9 @@ table {
   align-items: center;
   color: #192028;
 }
+.clearfix {
+  clear: both;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -485,5 +488,29 @@ header.container {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.04em;
+}
+.territory__gallery {
+  margin: -11px;
+}
+.territory__gallery-image {
+  float: left;
+  margin: 11px;
+  position: relative;
+}
+.territory__gallery-image-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: #005F99;
+  opacity: 0.7;
+  padding: 4px 16px;
+  height: 64px;
+  display: flex;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
