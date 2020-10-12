@@ -338,12 +338,46 @@
     <section class="layouts layouts-padding">
         <a name="layouts"></a>
         <h2 class="layouts__title section-title">Планировки</h2>
+        <div class="layouts__filter-panel filter-panel">
+            <form method="post" action="/filter.php">
+                <div class="filter-panel__labels">
+                    <span class="filter-panel__labels-flat">Этаж</span>
+                    <span class="filter-panel__labels-m2">Площадь, м<sup>2</sup></span>
+                </div>
+                <div class="filter-panel__fields">
+                    <select class="filter-panel__floor" name="filter-floor" id="filter-floor">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <input class="filter-panel__area" name="filter-area-min" type="text" placeholder="22,4" value="">
+                    <div class="filter-panel__hyphen">-</div>
+                    <input class="filter-panel__area" name="filter-area-max" type="text" placeholder="100,4" value="">
+                    <button class="filter-panel__submit" type="submit">Поиск</button>
+                </div>
+                <a class="filter-panel__reset" href="#">Х&nbsp;&nbsp;очистить фильтр</a>
+            </form>
+        </div>
+        <div class="layouts__filter-result filter-result">
+            <div class="filter-result__table">
+                <div class="filter-result__table-head">
+                    <div class="filter-result__table-th">Этаж</div>
+                    <div class="filter-result__table-th">Площадь</div>
+                    <div class="filter-result__table-th">Стоимость</div>
+                </div>
+                <div class="filter-result__table-row">
+                    <div class="filter-result__table-td">7</div>
+                    <div class="filter-result__table-td">38,4</div>
+                    <div class="filter-result__table-td">20 352$</div>
+                </div>
+            </div>
+        </div>
     </section>
     <section></section>
     <section></section>
 </main>
 <footer class="container">
-    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2
+    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2 + 1
 
 </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

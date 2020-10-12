@@ -68,6 +68,12 @@ table {
 
 /* end reset style */
 
+.myfont (@font-weight, @font-size,@line-height ) {
+  font-weight: @font-weight;
+  font-size: @font-size;
+  line-height: @font-size * 133 / 100;
+}
+
 .page-header {
   font-weight: bold;
   font-size: 50px;
@@ -75,6 +81,7 @@ table {
   letter-spacing: 0.055em;
   text-transform: uppercase;
   color: @white;
+  .myfont(500, 14px, 17px)
 }
 
 .section-title {
@@ -692,5 +699,74 @@ header.container {
 .layouts {
   &__title {
     margin-bottom: 72px;
+  }
+  &__filter-panel {
+    margin-bottom: 70px;
+  }
+}
+
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  &__labels {
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: @grey-dark4;
+    letter-spacing: 0.04em;
+    &-flat {
+      width: 216px;
+    }
+  }
+  &__fields {
+    display: flex;
+    margin: 16px 0 8px;
+  }
+  &__floor {
+    width: 194px;
+    margin-right: 24px;
+    padding: 8px 0;
+  }
+  &__area {
+    width: 85px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px 0;
+    text-align: center;
+  }
+  &__hyphen {
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__submit {
+    width: 194px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: @grey-dark4;
+    letter-spacing: 0.04em;
+  }
+  &__reset {
+    margin-left: 483px;
+    font-size: 10px;
+    line-height: 12px;
+    color: @grey-dark1;
+    text-decoration: none;
+  }
+}
+
+.filter-result {
+  &__table {
+    width: 520px;
+    height: 434px;
   }
 }
