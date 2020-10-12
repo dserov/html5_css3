@@ -314,7 +314,6 @@ header.container {
 .about-padding {
   margin-bottom: 120px;
 }
-
 .about {
   &__title {
     padding: 0 1058px 72px 80px;
@@ -415,7 +414,6 @@ header.container {
 .territory-padding {
   margin: 0 80px 72px;
 }
-
 .territory {
   &__title {
     margin-bottom: 40px;
@@ -464,7 +462,6 @@ header.container {
 .infrastru-padding {
   margin: 0 80px 120px;
 }
-
 .infrastru {
   position: relative;
   height: 824px;
@@ -545,4 +542,46 @@ header.container {
 /* jquery some easy style */
 .ui-state-active {
   border-bottom: 1px solid @blue-dark;
+}
+
+.gallery-padding {
+  margin-bottom: 120px;
+}
+.gallery {
+  &__title {
+    margin: 0 0 72px 80px;
+  }
+  &__controls {
+    width: 120px;
+    margin: 0 118px 7px 1202px;
+    display: flex;
+    justify-content: space-between;
+    &-button {
+      width: 48px;
+      height: 48px;
+      background-color: @blue-light;
+      color: @white;
+      font-size: 1.5rem;
+    }
+  }
+  &__images {
+    height: 432px;
+    display: flex;
+    overflow: hidden;
+  }
+  &__image:last-child {
+    margin: 0;
+  }
+  &__image {
+    margin-right: 24px;
+  }
+  &__all-gallery-link {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: @black;
+    margin: 40px 0 0 1275px;
+    display: block;
+    text-decoration: none;
+  }
 }

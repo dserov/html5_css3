@@ -579,4 +579,43 @@ header.container {
 .ui-state-active {
   border-bottom: 1px solid #005F99;
 }
+.gallery-padding {
+  margin-bottom: 120px;
+}
+.gallery__title {
+  margin: 0 0 72px 80px;
+}
+.gallery__controls {
+  width: 120px;
+  margin: 0 118px 7px 1202px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__controls-button {
+  width: 48px;
+  height: 48px;
+  background-color: #0094DF;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.gallery__images {
+  height: 432px;
+  display: flex;
+  overflow: hidden;
+}
+.gallery__image:last-child {
+  margin: 0;
+}
+.gallery__image {
+  margin-right: 24px;
+}
+.gallery__all-gallery-link {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #192028;
+  margin: 40px 0 0 1275px;
+  display: block;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

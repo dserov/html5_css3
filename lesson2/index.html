@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="fonts/montserrat.css">
+    <link rel="stylesheet" href="fonts/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,17 +22,17 @@
                     <a class="navigation__link navigation__link_active" href="#about">О проекте</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#koncepciya">Концепция</a></li>
+                    <a class="navigation__link" href="#concept">Концепция</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#galeraya">Галерея</a></li>
+                    <a class="navigation__link" href="#gallery">Галерея</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#planirovki">Планировки</a></li>
+                    <a class="navigation__link" href="#layouts">Планировки</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#hod_stroitelstva">Ход строительства</a></li>
+                    <a class="navigation__link" href="#construction-progress">Ход строительства</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#akciya">Акция</a></li>
+                    <a class="navigation__link" href="#stock">Акция</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#documentaciya">Документация</a></li>
+                    <a class="navigation__link" href="#documentation">Документация</a></li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="#contacts">Контакты</a></li>
             </ul>
@@ -210,9 +211,12 @@
 
         <div id="infrastru-tabs">
             <ul class="infrastru__tab-menu">
-                <li class="infrastru__tab-menu-item"><a href="#tabs-1" class="infrastru__tab-menu-link">Информация о недвижимости</a></li>
-                <li class="infrastru__tab-menu-item"><a href="#tabs-2" class="infrastru__tab-menu-link">Технические характеристики</a></li>
-                <li class="infrastru__tab-menu-item"><a href="#tabs-3" class="infrastru__tab-menu-link">Архитектурная концепция</a></li>
+                <li class="infrastru__tab-menu-item"><a href="#tabs-1" class="infrastru__tab-menu-link">Информация о
+                    недвижимости</a></li>
+                <li class="infrastru__tab-menu-item"><a href="#tabs-2" class="infrastru__tab-menu-link">Технические
+                    характеристики</a></li>
+                <li class="infrastru__tab-menu-item"><a href="#tabs-3" class="infrastru__tab-menu-link">Архитектурная
+                    концепция</a></li>
             </ul>
             <div class="infrastru__tab-panel">
                 <div id="tabs-1">
@@ -278,14 +282,27 @@
             </div>
         </div>
     </section>
-    <section></section>
+    <section class="gallery gallery-padding">
+        <a name="gallery"></a>
+        <h2 class="gallery__title section-title">Галерея</h2>
+        <div class="gallery__controls">
+            <button class="gallery__controls-button icon-arrow-left2" title="prev slide"></button>
+            <button class="gallery__controls-button icon-arrow-right2" title="next slide"></button>
+        </div>
+        <div class="gallery__images">
+            <img class="gallery__image" src="img/gallery-image1.png" alt="Основное здание" height="432">
+            <img class="gallery__image" src="img/gallery-image2.png" alt="Перекресток" height="432">
+            <img class="gallery__image" src="img/gallery-image3.png" alt="Мансарда" height="432">
+        </div>
+        <a href="#show-all-gallery" class="gallery__all-gallery-link">вся галерея</a>
+    </section>
     <section></section>
     <section></section>
     <section></section>
     <section></section>
 </main>
 <footer class="container">
-    Затрачено времени - 4ч + 1.5 + 3
+    Затрачено времени - 4ч + 1.5 + 3 + 2
 </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
