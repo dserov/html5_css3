@@ -208,21 +208,21 @@ header.container {
   display: inline-block;
   padding: 0 5px 5px;
 }
-.contacty__list {
+.contacts__list {
   display: flex;
   margin-bottom: 24px;
 }
-.contacty__item {
+.contacts__item {
   margin-right: 20px;
 }
-.contacty__phone {
+.contacts__phone {
   display: block;
   color: #FFFFFF;
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 20px;
 }
-.contacty__address {
+.contacts__address {
   color: #FFFFFF;
   background: url("../img/google-place.png") no-repeat left;
   font-size: 13px;
@@ -231,14 +231,14 @@ header.container {
   padding-left: 20px;
   width: 270px;
 }
-.contacty__img {
+.contacts__img {
   width: 16px;
   height: 16px;
 }
-.contacty__socseti-list {
+.contacts__socseti-list {
   display: flex;
 }
-.contacty__socseti-item {
+.contacts__socseti-item {
   margin-right: 20px;
 }
 .header-slider {
@@ -353,7 +353,7 @@ header.container {
   width: 48px;
   height: 48px;
 }
-.rasporka {
+.spacer {
   flex-grow: 1;
 }
 /* main content */
