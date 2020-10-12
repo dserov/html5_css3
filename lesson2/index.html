@@ -4,55 +4,72 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="fonts/montserrat.css">
+    <link rel="stylesheet" href="fonts/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="container">
     <div class="logo-menu">
         <div class="logo-menu__logo">
-            <img src="img/logo.png" alt="company logo">
-            <p class="logo-menu__title logo-menu__title--white">
+            <img class="logo-menu__img" src="img/logo.png" alt="company logo">
+            <p class="logo-menu__title">
                 Недвижимость, которой хочется владеть!
             </p>
         </div>
-        <nav class="logo-menu__navigation">
-            <ul class="navigation">
+        <nav class="navigation logo-menu__navigation">
+            <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link navigation__link--active" href="#about">О проекте</a>
+                    <a class="navigation__link navigation__link_active" href="#about">О проекте</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#koncepciya">Концепция</a></li>
+                    <a class="navigation__link" href="#concept">Концепция</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#galeraya">Галерея</a></li>
+                    <a class="navigation__link" href="#gallery">Галерея</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#planirovki">Планировки</a></li>
+                    <a class="navigation__link" href="#layouts">Планировки</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#hod_stroitelstva">Ход строительства</a></li>
+                    <a class="navigation__link" href="#construction-progress">Ход строительства</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#akciya">Акция</a></li>
+                    <a class="navigation__link" href="#stock">Акция</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#documentaciya">Документация</a></li>
+                    <a class="navigation__link" href="#documentation">Документация</a></li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#contacty">Контакты</a></li>
+                    <a class="navigation__link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <div class="logo-menu__contacty">
-            <ul class="contacty__list">
-                <li class="contacty__item"><a href="#" class="contacty_link"><img class="contacty__img" src="img/phone.png" alt="phone"></a></li>
-                <li class="contacty__item"><a href="#" class="contacty_link"><img class="contacty__img" src="img/whatsapp.png" alt="whatsapp"></a></li>
-                <li class="contacty__item"><a href="#" class="contacty_link"><img class="contacty__img" src="img/viber.png" alt="viber"></a></li>
-                <li class="contacty__item"><a href="#" class="contacty_link"><img class="contacty__img" src="img/telegram.png" alt="telegram"></a></li>
+        <div class="contacts logo-menu__contacts">
+            <ul class="contacts__list">
+                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
+                                                                                   src="img/phone.png" alt="phone"></a>
+                </li>
+                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
+                                                                                   src="img/whatsapp.png"
+                                                                                   alt="whatsapp"></a>
+                </li>
+                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
+                                                                                   src="img/viber.png" alt="viber"></a>
+                </li>
+                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
+                                                                                   src="img/telegram.png"
+                                                                                   alt="telegram"></a>
+                </li>
             </ul>
-            <span class="contacty__phone">+995 593 18 72 72</span>
-            <div class="contacty__address">
+            <span class="contacts__phone">+995 593 18 72 72</span>
+            <div class="contacts__address">
                 <span>г. Батуми, Аэропортское Шоссе 33</span>
             </div>
-            <ul class="contacty__socseti-list">
-                <li class="contacty__socseti-item"><a href="#" class="contacty__socseti-link"><img class="contacty__img" src="img/facebook.png" alt="facebook"></a>
+            <ul class="contacts__socseti-list">
+                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
+                                                                                                   src="img/facebook.png"
+                                                                                                   alt="facebook"></a>
                 </li>
-                <li class="contacty__socseti-item"><a href="#" class="contacty__socseti-link"><img class="contacty__img" src="img/instagram.png" alt="instagram"></a>
+                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
+                                                                                                   src="img/instagram.png"
+                                                                                                   alt="instagram"></a>
                 </li>
-                <li class="contacty__socseti-item"><a href="#" class="contacty__socseti-link"><img class="contacty__img" src="img/youtube.png" alt="youtube"></a>
+                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
+                                                                                                   src="img/youtube.png"
+                                                                                                   alt="youtube"></a>
                 </li>
             </ul>
         </div>
@@ -67,119 +84,281 @@
             <div class="header-slider__lang-item"><a class="header-slider__lang-link" href="#ge">GE</a></div>
             <div class="header-slider__lang-item"><a class="header-slider__lang-link" href="#ru">RU</a></div>
         </div>
-        <div class="header-slider__main-header h1">
+        <h1 class="header-slider__main-header page-header">
             Жилой комплекс Галилео
-        </div>
-        <a class="header-slider__select-flat" href="#select-flat">
+        </h1>
+        <button class="header-slider__select-flat">
             Выбрать квартиру
-        </a>
-        <div class="rasporka"></div>
+        </button>
+        <div class="spacer"></div>
         <div class="header-slider__news">
             <div class="header-slider__news-item">
-                <h4 class="header-slider__news-item-title">Строительство комплекса Галилео продвигается быстрыми темпами</h4>
+                <h2 class="header-slider__news-item-title">Строительство комплекса Галилео продвигается быстрыми
+                    темпами</h2>
                 <span class="header-slider__news-item-data">Июль 2020</span>
             </div>
             <div class="header-slider__news-item">
-                <h4 class="header-slider__news-item-title">Строительство комплекса Галилео продвигается быстрыми темпами</h4>
+                <h2 class="header-slider__news-item-title">Строительство комплекса Галилео продвигается быстрыми
+                    темпами</h2>
                 <span class="header-slider__news-item-data">Июль 2020</span>
             </div>
         </div>
         <div class="header-slider__controls">
-            <div class="header-slider__controls-item">
-                <a class="header-slider__controls-link" href="#" title="prev slide">
-                    <img src="img/left-arrow.png" alt="prev slide">
-                </a>
-            </div>
-            <div class="header-slider__controls-item">
-                <a class="header-slider__controls-link" href="#" title="next slide">
-                    <img src="img/right-arrow.png" alt="next slide">
-                </a>
-            </div>
+            <button class="header-slider__controls-button" title="prev slide">
+                <img src="img/left-arrow.png" alt="prev slide">
+            </button>
+            <button class="header-slider__controls-button" title="next slide">
+                <img src="img/right-arrow.png" alt="next slide">
+            </button>
         </div>
     </div>
 </header>
 <main class="container">
-    <a name="about"></a>
-    <section class="about">
-        <h2 class="about__title h2">О проекте</h2>
+    <section class="about about-padding">
+        <a name="about"></a>
+        <h2 class="about__title section-title">О проекте</h2>
         <div class="about__wrapper">
             <div class="about__video">
                 <h3 class="about__video-title">Жилой квартал “Галилео” – </h3>
-                <p class="about__video-text">один из самых больших и уникальных жилых комплексов в Грузии, расположен в г. Батуми, проект компания застройщика “Калатози”.</p>
-                <video controls width="100%" height="280px" src="video/about-video.ogv" poster="img/about-video-poster.png"></video>
+                <p class="about__video-text">один из самых больших и уникальных жилых комплексов в Грузии, расположен в
+                    г. Батуми, проект компания застройщика “Калатози”.</p>
+                <video controls width="100%" height="280px" src="video/about-video.ogv"
+                       poster="img/about-video-poster.png"></video>
             </div>
             <div class="about__slider">
                 <div class="about__slider-left"></div>
                 <div class="about__slider-right"></div>
                 <div class="about__slider-content">
                     <div class="about__slider-controls">
-                        <div class="about__slider-controls-item">
-                            <a class="about__slider-controls-link" href="#" title="prev slide">
-                                <img src="img/left-arrow.png" alt="prev slide">
-                            </a>
-                        </div>
-                        <div class="about__slider-controls-item">
-                            <a class="about__slider-controls-link" href="#" title="next slide">
-                                <img src="img/right-arrow.png" alt="next slide">
-                            </a>
-                        </div>
+                        <button class="about__slider-controls-button" title="prev slide">
+                            <img src="img/left-arrow.png" alt="prev slide">
+                        </button>
+                        <button class="about__slider-controls-button" title="next slide">
+                            <img src="img/right-arrow.png" alt="next slide">
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <ul class="about__more">
-            <li class="about__more-items about__more-items--icon-wind">7 минут от моря</li>
-            <li class="about__more-items about__more-items--icon-lift">7 лифтовых кабин</li>
-            <li class="about__more-items about__more-items--icon-house">12 видов планировок</li>
+            <li class="about__more-items about__more-items_icon-wind">7 минут от моря</li>
+            <li class="about__more-items about__more-items_icon-lift">7 лифтовых кабин</li>
+            <li class="about__more-items about__more-items_icon-house">12 видов планировок</li>
         </ul>
     </section>
-    <section class="territory">
-        <h2 class="territory__title h2">Территория</h2>
+    <section class="territory territory-padding">
+        <h2 class="territory__title section-title">Территория</h2>
         <ul class="territory__text">
-            <li class="territory__text-item">ЖК “Галилео”- это доступные квартиры в современном жилом комплексе для жизни и отдыха. Квартиры  продаются с готовым ремонтом (белом каркас), все материалы сертифицированы,экологически чистые и прочные. </li>
-            <li class="territory__text-item">Квартиры очень светлые и теплые, за счет правильного расположения дома и азимутальных углов при восходе и закате солнца.
-                Расстояние до моря <strong>750 метров</strong>, т.е. <strong>7 минут</strong> от моря. ЖК “Галилео” <strong>9000 кв. метров</strong>, благоустройство:</li>
+            <li class="territory__text-item">ЖК “Галилео”- это доступные квартиры в современном жилом комплексе для
+                жизни и отдыха. Квартиры продаются с готовым ремонтом (белом каркас), все материалы
+                сертифицированы,экологически чистые и прочные.
+            </li>
+            <li class="territory__text-item">Квартиры очень светлые и теплые, за счет правильного расположения дома и
+                азимутальных углов при восходе и закате солнца.
+                Расстояние до моря <strong>750 метров</strong>, т.е. <strong>7 минут</strong> от моря. ЖК “Галилео”
+                <strong>9000 кв. метров</strong>, благоустройство:
+            </li>
         </ul>
         <div class="territory__gallery">
-            <figure class="territory__gallery-image"><img src="img/territory-parking.png" alt="парковка" width="302" height="552" >
-                <figcaption class="territory__gallery-image-title">Паркинг на 360 автомобилей</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-terapevt.png" alt="терапевты" width="519" height="264" >
-                <figcaption class="territory__gallery-image-title">Терапевтический центр для взрослых и детей</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-disaine.png" alt="ланд.дизайн" width="411" height="264" >
-                <figcaption class="territory__gallery-image-title">Ландшафтный дизайн с уникальными и редкими растениями</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-child-place.png" alt="игровые площадки" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Детские игровые прощадки</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-sport-place.png" alt="спорт площадки" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Спортивная площадка</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-rest-place.png" alt="зоны отдыха" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Зоны отдыха</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-bassein.png" alt="бассейн" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Бассейн и джакузи</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-fitness.png" alt="фитнес центр" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Фитнес-центр</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-restorany.png" alt="рестораны" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Рестораны и бары</figcaption>
-            </figure>
-            <figure class="territory__gallery-image"><img src="img/territory-shops.png" alt="магазины" width="302" height="264">
-                <figcaption class="territory__gallery-image-title">Магазины</figcaption>
-            </figure>
+            <div class="territory__gallery-image"><img src="img/territory-parking.png" alt="парковка" width="302"
+                                                       height="552">
+                <div class="territory__gallery-image-title">Паркинг на 360 автомобилей</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-terapevt.png" alt="терапевты" width="519"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Терапевтический центр для взрослых и детей
+                </div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-disaine.png" alt="ланд.дизайн" width="411"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Ландшафтный дизайн с уникальными и редкими
+                    растениями
+                </div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-child-place.png" alt="игровые площадки"
+                                                       width="302" height="264">
+                <div class="territory__gallery-image-title">Детские игровые прощадки</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-sport-place.png" alt="спорт площадки"
+                                                       width="302" height="264">
+                <div class="territory__gallery-image-title">Спортивная площадка</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-rest-place.png" alt="зоны отдыха"
+                                                       width="302" height="264">
+                <div class="territory__gallery-image-title">Зоны отдыха</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-bassein.png" alt="бассейн" width="302"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Бассейн и джакузи</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-fitness.png" alt="фитнес центр" width="302"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Фитнес-центр</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-restorany.png" alt="рестораны" width="302"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Рестораны и бары</div>
+            </div>
+            <div class="territory__gallery-image"><img src="img/territory-shops.png" alt="магазины" width="302"
+                                                       height="264">
+                <div class="territory__gallery-image-title">Магазины</div>
+            </div>
             <div class="clearfix"></div>
         </div>
     </section>
-    <section></section>
+    <section class="infrastru infrastru-padding">
+        <h2 class="infrastru__title section-title">Инфраструктура</h2>
+
+        <div id="infrastru-tabs">
+            <ul class="infrastru__tab-menu">
+                <li class="infrastru__tab-menu-item"><a href="#tabs-1" class="infrastru__tab-menu-link">Информация о
+                    недвижимости</a></li>
+                <li class="infrastru__tab-menu-item"><a href="#tabs-2" class="infrastru__tab-menu-link">Технические
+                    характеристики</a></li>
+                <li class="infrastru__tab-menu-item"><a href="#tabs-3" class="infrastru__tab-menu-link">Архитектурная
+                    концепция</a></li>
+            </ul>
+            <div class="infrastru__tab-panel">
+                <div id="tabs-1">
+                    <div class="panel-info">
+                        <h3 class="panel-info__title">Информация о недвижимости</h3>
+                        <ul class="panel-info__list">
+                            <li class="panel-info__item">Этажность здания 21 этаж</li>
+                            <li class="panel-info__item">Жилая недвижимость 20 этажей, 627 квартиры, каждый этаж 33
+                                кв.
+                            </li>
+                            <li class="panel-info__item">Терраса 21 этаж 1700 кв.метров</li>
+                            <li class="panel-info__item">Площадь квартир начинается от 22,4 кв.м</li>
+                            <li class="panel-info__item">Коммерческая недвижимость ___ ждем данные</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div class="panel-info">
+                        <h3 class="panel-info__title">Технические характеристики</h3>
+                        <ul class="panel-info__list">
+                            <li class="panel-info__item">Выдерживает Землетрясение 8 баллов за счет глубины фундамента и
+                                техники
+                                бурения;
+                            </li>
+                            <li class="panel-info__item">Дом оснащен современной системой противопожарной безопасности
+                                по
+                                постановлению №41 Грузии (Евросоюз);
+                            </li>
+                            <li class="panel-info__item">Дом оснащен автономной системой энерго замещения,
+                                альтернативный
+                                источник дизельный генератор;
+                            </li>
+                            <li class="panel-info__item">Выдерживает высокие ветровые нагрузки.</li>
+                        </ul>
+                        <p class="panel-info__text">Дополняет все это высокопрочная порода камня “Диорит” который
+                            используют
+                            в
+                            фасаде и интерьере дома. Панорамные лифты (2 шт.) доставят Вас на последний этаж в ресторан
+                            за
+                            считанные секунды (не заходя в здание ). </p>
+                        <p class="panel-info__text">Система бетон_________(ждем данные) Б-з0 марка выской коф.прочности
+                            iSO
+                            высокая подушка и нагрузка дома высокая.
+                        </p>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <div class="panel-info">
+                        <h3 class="panel-info__title">Архитектурная концепция</h3>
+                        <p class="panel-info__text">Архитектурная концепция - это комбинированный стиль фасадов с
+                            панорамным
+                            остеклением и продуманным зонирование апартаментов.
+                        </p>
+                        <p class="panel-info__text">Комплекс имеет удобные входные группы 5 лифтовых кабин (ожидания
+                            прибытия
+                            лифта не более 60 секунд), а также подъезд/выезд на автотранспорте будет возможен с трех
+                            сторон,
+                            что
+                            не создает пробок. грузовой и второй маленький.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery gallery-padding">
+        <a name="gallery"></a>
+        <h2 class="gallery__title section-title">Галерея</h2>
+        <div class="gallery__controls">
+            <button class="gallery__controls-button icon-arrow-left2" title="prev slide"></button>
+            <button class="gallery__controls-button icon-arrow-right2" title="next slide"></button>
+        </div>
+        <div class="gallery__images">
+            <img class="gallery__image" src="img/gallery-image1.png" alt="Основное здание" height="432">
+            <img class="gallery__image" src="img/gallery-image2.png" alt="Перекресток" height="432">
+            <img class="gallery__image" src="img/gallery-image3.png" alt="Мансарда" height="432">
+        </div>
+        <a href="#show-all-gallery" class="gallery__all-gallery-link">вся галерея</a>
+    </section>
+    <section class="our-advantages our-advantages-padding">
+        <div class="our-advantages__wrapper">
+            <h2 class="our-advantages__title section-title">наши преимущества</h2>
+            <ul class="our-advantages__list">
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-edit"></div>
+                    <span>Авторский дизайн-проект дома</span>
+                </li>
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-house"></div>
+                    <span>Есть возможность перепланировки</span>
+                </li>
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-medal"></div>
+                    <span>Европейские стандарты строительства и материалов ISO</span>
+                </li>
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-coin"></div>
+                    <span>Доступные условия покупки для всех</span>
+                </li>
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-hammer"></div>
+                    <span>Готовые квартиры с отделкой (белый каркас)</span>
+                </li>
+                <li class="our-advantages__item">
+                    <div class="our-advantages__item-icon advantages-icon-location"></div>
+                    <span>Застройщик и девелопер - одна компания</span>
+                </li>
+            </ul>
+        </div>
+        <div class="our-advantages__logo-man">
+            <img src="img/advantages-logo-man.png" alt="Наши профессионалы!">
+            <div class="our-advantages__ask">
+                <h3 class="our-advantages__ask-title">Задать вопрос!</h3>
+                <a class="our-advantages__ask-link" href="#">Консультация <i class="icon-arrow-right2"></i></a>
+            </div>
+            <div class="our-advantages__logo-man-fill-bg"></div>
+        </div>
+    </section>
+    <section class="layouts layouts-padding">
+        <a name="layouts"></a>
+        <h2 class="layouts__title section-title">Планировки</h2>
+    </section>
     <section></section>
     <section></section>
 </main>
 <footer class="container">
-Затрачено времени - 4ч + 1.5
+    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2
+
 </footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#infrastru-tabs').tabs({
+            activate: function (event, ui) {
+                let id = ui.newPanel[0].id;
+                let img = window.document.location.pathname.replace('index.html', 'img/infrastructura-' + id + '.png');
+                // change bg image
+                $('.infrastru').css('background-image', 'url("' + img + '")');
+            }
+        });
+    });
+</script>
 </body>
 </html>
