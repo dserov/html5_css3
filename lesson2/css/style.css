@@ -626,7 +626,6 @@ header.container {
   margin-bottom: 72px;
 }
 .our-advantages__list {
-  width: 945px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -655,6 +654,9 @@ header.container {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+.our-advantages__wrapper {
+  width: 925px;
 }
 .our-advantages__logo-man {
   width: 515px;
@@ -711,5 +713,11 @@ header.container {
 }
 .advantages-icon-location:after {
   background-image: url("../img/advantages-icon-location.png");
+}
+.layouts-padding {
+  margin: 0 80px 120px;
+}
+.layouts__title {
+  margin-bottom: 72px;
 }
 /*# sourceMappingURL=style.css.map */
