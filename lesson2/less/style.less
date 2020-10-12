@@ -585,3 +585,101 @@ header.container {
     text-decoration: none;
   }
 }
+
+.our-advantages-padding {}
+.our-advantages {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    margin-bottom: 72px;
+  }
+  &__list {
+    width: 945px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__item {
+    width: 411px;
+    margin: 0 24px 72px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    &-icon {
+      background: @blue-dark;
+      border-radius: 50%;
+      margin-right: 37px;
+      width: 72px;
+      height: 72px;
+      position: relative;
+      &:after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    }
+  }
+  &__logo-man {
+    width: 515px;
+    height: 632px;
+    //background: linear-gradient(to right, #fff 133px, @blue-light 133px);
+    position: relative;
+    &-fill-bg {
+      width: 382px;
+      height: 568px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: @blue-light;
+      z-index: -1;
+    }
+  }
+  &__ask {
+    height: 136px;
+    width: 515px;
+    padding-left: 133px;
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @blue-dark;
+    &-title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    &-link {
+      text-decoration: none;
+      color: white;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.advantages-icon-edit:after {
+  background-image: url("../img/advantages-icon-edit.png");
+}
+.advantages-icon-house:after {
+  background-image: url("../img/advantages-icon-house.png");
+}
+.advantages-icon-medal:after {
+  background-image: url("../img/advantages-icon-medal.png");
+}
+.advantages-icon-coin:after {
+  background-image: url("../img/advantages-icon-coin.png");
+}
+.advantages-icon-hammer:after {
+  background-image: url("../img/advantages-icon-hammer.png");
+}
+.advantages-icon-location:after {
+  background-image: url("../img/advantages-icon-location.png");
+}
