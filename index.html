@@ -113,15 +113,19 @@
 </header>
 <main class="container">
     <section class="about about-padding">
-        <a name="about"></a>
+        <a id="about"></a>
         <h2 class="about__title section-title">О проекте</h2>
         <div class="about__wrapper">
             <div class="about__video">
                 <h3 class="about__video-title">Жилой квартал “Галилео” – </h3>
                 <p class="about__video-text">один из самых больших и уникальных жилых комплексов в Грузии, расположен в
                     г. Батуми, проект компания застройщика “Калатози”.</p>
-                <video controls width="100%" height="280px" src="video/about-video.ogv"
-                       poster="img/about-video-poster.png"></video>
+                <video controls width="576" height="280" poster="img/about-video-poster.png">
+                    <source src="video/about-video.mp4" type="video/mp4">
+                    <source src="video/about-video.webm" type="video/webm">
+                    <source src="video/about-video.ogv" type="video/ogg">
+                    Your browser doesn't support HTML5 video tag.
+                </video>
             </div>
             <div class="about__slider">
                 <div class="about__slider-left"></div>
@@ -204,7 +208,6 @@
     </section>
     <section class="infrastru infrastru-padding">
         <h2 class="infrastru__title section-title">Инфраструктура</h2>
-
         <div id="infrastru-tabs">
             <ul class="infrastru__tab-menu">
                 <li class="infrastru__tab-menu-item"><a href="#tabs-1" class="infrastru__tab-menu-link">Информация о
@@ -279,7 +282,7 @@
         </div>
     </section>
     <section class="gallery gallery-padding">
-        <a name="gallery"></a>
+        <a id="gallery"></a>
         <h2 class="gallery__title section-title">Галерея</h2>
         <div class="gallery__controls">
             <button class="gallery__controls-button icon-arrow-left2" title="prev slide"></button>
@@ -332,7 +335,7 @@
         </div>
     </section>
     <section class="layouts layouts-padding">
-        <a name="layouts"></a>
+        <a id="layouts"></a>
         <h2 class="layouts__title section-title">Планировки</h2>
         <div class="layouts__filter-panel filter-panel">
             <form method="post" action="/filter.php">
@@ -471,7 +474,7 @@
         </div>
     </section>
     <section class="purchase-terms purchase-terms-padding">
-        <a name="purchase-terms"></a>
+        <a id="purchase-terms"></a>
         <h2 class="purchase-terms__title section-title">условия покупки</h2>
         <div class="purchase-terms__items">
             <div class="purchase-terms__item">
@@ -512,12 +515,12 @@
                         <p class="have-questions__content-wrp-text">Заполните форму и мы свяжимся с Вами!</p>
                     </div>
                     <form class="have-questions__content-form" action="?" method="post">
-                        <input class="have-questions__content-form-input" type="text" name="" placeholder="Имя">
-                        <input class="have-questions__content-form-input" type="text" name=""
+                        <input class="have-questions__content-form-input" type="text" name="name" placeholder="Имя">
+                        <input class="have-questions__content-form-input" type="text" name="phone"
                                placeholder="Номер телефона">
                         <button class="have-questions__content-form-submit" type="submit">Отправить</button>
                         <label class="have-questions__content-form-tac">
-                            <input type="checkbox">
+                            <input type="checkbox" name="tac" value="y">
                             <span>Я принимаю условия пользовательского соглашения и даю право на обработку моих персональных данных</span>
                         </label>
                     </form>
@@ -535,9 +538,9 @@
     Затрачено времени - 4ч + 1.5 + 3 + 2 + 2 + 1 + 1 + 2
     19:49 -
 </footer>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script>
     $(document).ready(function () {
         $('#infrastru-tabs').tabs({
             activate: function (event, ui) {
