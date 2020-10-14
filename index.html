@@ -87,8 +87,8 @@
         <h1 class="header-slider__main-header page-header">
             Жилой комплекс Галилео
         </h1>
-        <button class="header-slider__select-flat">
-            Выбрать квартиру
+        <button class="header-slider__select-flat icon-key">
+            <span>Выбрать квартиру</span>
         </button>
         <div class="spacer"></div>
         <div class="header-slider__news">
@@ -327,7 +327,7 @@
             </ul>
         </div>
         <div class="our-advantages__logo-man">
-            <img src="img/advantages-logo-man.png" alt="Наши профессионалы!">
+            <img src="img/advantages-logo-man.png" alt="Наши профессионалы!" width="446" height="448">
             <div class="our-advantages__ask">
                 <h3 class="our-advantages__ask-title">Задать вопрос!</h3>
                 <a class="our-advantages__ask-link" href="#">Консультация <i class="icon-arrow-right2"></i></a>
@@ -423,14 +423,59 @@
                     </div>
                 </div>
             </div>
+            <div class="filter-result__plan">
+                <div class="filter-result__navigation">
+                    <button class="filter-result__button"><img src="img/left-arrow.png" alt="Предыдущая"></button>
+                    <button class="filter-result__button"><img src="img/right-arrow.png" alt="Следующая"></button>
+                </div>
+                <div class="filter-result__plan-img">
+                    <img src="img/layouts-schema1.png" alt="Планировка">
+                </div>
+                <div class="filter-result__navigation">
+                    <button class="filter-result__button"><img src="img/search.png" alt="Поиск"></button>
+                </div>
+            </div>
+            <div class="filter-result__plan-description">
+                <h3 class="filter-result__plan-title">Квартира №100</h3>
+                <p class="filter-result__plan-text">• Белый каркас;<br>
+                    • Двухкамерные окна;<br>
+                    • Возможность свободной планировки;<br>
+                    • Эко-материалы
+                </p>
+                <button class="filter-result__plan-download icon-floppy-disk">
+                    <span>Скачать планировку</span>
+                </button>
+                <input type="text" class="filter-result__plan-input-phone" placeholder="Введите Ваш телефон">
+                <button class="filter-result__plan-request-call icon-phone">
+                    <span>Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="our-catalog our-catalog-padding">
+        <div class="our-catalog__bg">
+            <img class="our-catalog__bg-img" src="img/our-catalog.png" alt="Наш каталог" width="584" height="377">
+        </div>
+        <div class="our-catalog__form">
+            <form action="?" method="post">
+                <h3 class="our-catalog__form-title">Изучите наш каталог</h3>
+                <p class="our-catalog__form-text">Оставьте заявку и мы отправим вам PDF каталог с планировками и ценами
+                    в течении 2 минут.</p>
+                <input type="text" class="our-catalog__form-input-name" placeholder="Ваше имя">
+                <input type="text" class="our-catalog__form-input-email" placeholder="Ваш E-mail">
+                <input type="checkbox" class="our-catalog__form-checkbox-tc" id="tc">
+                <label for="tc">Я принимаю условия пользовательского соглашения и даю право на обработку моих
+                    персональных данных</label>
+                <button type="submit" class="our-catalog__form-submit">
+                    Отправить заявку
+                </button>
+            </form>
         </div>
     </section>
     <section></section>
-    <section></section>
 </main>
 <footer class="container">
-    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2 + 1
-    13-16
+    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2 + 1 + 1 + 2
 </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>

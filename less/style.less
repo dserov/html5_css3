@@ -68,6 +68,24 @@ table {
 
 /* end reset style */
 
+button {
+  cursor: pointer;
+  transition: font-size 0.3s;
+}
+
+button:hover {
+  font-size: medium;
+}
+
+button:focus, button:active,
+input:focus, select:focus {
+  outline-color: @blue-dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -91,17 +109,14 @@ table {
 .myfont (@font-weight, @font-size) {
   font-weight: @font-weight;
   font-size: @font-size;
-  line-height: @font-size * 133 / 100;
+  line-height: @font-size * 123.3 / 100;
 }
 
 .page-header {
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 61px;
   letter-spacing: 0.055em;
   text-transform: uppercase;
   color: @white;
-  .myfont(500, 14px)
+  .myfont(bold, 50px)
 }
 
 .section-title {
@@ -110,15 +125,6 @@ table {
   font-size: 30px;
   line-height: 37px;
   text-transform: uppercase;
-}
-
-.h3 {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  display: flex;
-  align-items: center;
-  color: @black;
 }
 
 .clearfix {
@@ -275,17 +281,20 @@ header.container {
     margin: 0 300px 224px 0;
   }
   &__select-flat {
-    background: rgba(255, 255, 255, 0.8) url("../img/key.png") no-repeat 14px;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 16px 14px;
     color: @black;
-    width: 193px;
+    width: 210px;
     height: 56px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+  }
+  &__select-flat > span {
+    margin-left: 5px;
   }
   &__news {
     display: flex;
@@ -365,6 +374,7 @@ header.container {
       letter-spacing: 0.055em;
       text-transform: uppercase;
       margin-bottom: 14px;
+      .myfont(bold, 30px)
     }
     &-text {
       flex-grow: 1;
@@ -725,7 +735,7 @@ header.container {
 }
 
 .layouts-padding {
-  margin: 0 80px 120px;
+  margin: 0 80px 80px;
 }
 
 .layouts {
@@ -804,6 +814,8 @@ header.container {
 }
 
 .filter-result {
+  display: flex;
+  justify-content: space-between;
   &__table {
     width: 520px;
     height: 434px;
@@ -850,5 +862,110 @@ header.container {
       width: 33.3%;
       text-align: center;
     }
+
+  }
+  &__plan {
+    width: 411px;
+    height: 432px;
+    box-shadow: 0px 0px 16px 2px rgba(122, 123, 119, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    &-img {
+      align-self: center;
+    }
+    &-description {
+      width: 302px;
+      height: 432px;
+    }
+    &-title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: 0.04em;
+      color: @blue-light;
+      margin-bottom: 32px;
+    }
+    &-text {
+      display: block;
+      width: 100%;
+      height: 95px;
+      font-size: 13px;
+      line-height: 23px;
+      letter-spacing: 0.04em;
+      color: @grey-dark4;
+      margin-bottom: 32px;
+    }
+    &-download {
+      color: #fff;
+      border-color: @blue-dark;
+      background-color: @blue-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 48px;
+      height: 56px;
+      width: 100%;
+    }
+    &-download > span, &-request-call > span {
+      margin-left: 20px;
+    }
+    &-input-phone {
+      width: 100%;
+      height: 56px;
+      border-color: @blue-light;
+      margin-bottom: 24px;
+      padding: 0 16px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: @grey-dark1
+    }
+    &-request-call {
+      color: #fff;
+      border-color: @blue-dark;
+      background-color: @blue-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      width: 100%;
+    }
+  }
+  &__navigation {
+    display: flex;
+    margin: 16px 8px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 8px;
+  }
+}
+
+.our-catalog-padding {
+  margin-bottom: 120px;
+}
+
+.our-catalog {
+  height: 350px;
+  display: flex;
+  &__bg {
+    width: 600px;
+    background-color: @blue-light;
+    position: relative;
+    margin-right: 133px;
+    &-img {
+      position: absolute;
+      top: 30px;
+      left: 80px;    }
+  }
+  &__form {
+
   }
 }
