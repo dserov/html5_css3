@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Жилой комплекс Галилео</title>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
     <link rel="stylesheet" href="fonts/montserrat.css">
     <link rel="stylesheet" href="fonts/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -87,7 +88,7 @@
         <h1 class="header-slider__main-header page-header">
             Жилой комплекс Галилео
         </h1>
-        <button class="header-slider__select-flat icon-key">
+        <button class="header-slider__select-flat icon-key button-hover-text">
             <span>Выбрать квартиру</span>
         </button>
         <div class="spacer"></div>
@@ -104,9 +105,9 @@
             </div>
         </div>
         <div class="header-slider__controls">
-            <button class="header-slider__controls-button icon-arrow-left2" title="prev slide">
+            <button class="header-slider__controls-button icon-arrow-left2 button-hover-icon" title="prev slide">
             </button>
-            <button class="header-slider__controls-button icon-arrow-right2" title="next slide">
+            <button class="header-slider__controls-button icon-arrow-right2 button-hover-icon" title="next slide">
             </button>
         </div>
     </div>
@@ -132,9 +133,11 @@
                 <div class="about__slider-right"></div>
                 <div class="about__slider-content">
                     <div class="about__slider-controls">
-                        <button class="about__slider-controls-button icon-arrow-left2" title="prev slide">
+                        <button class="about__slider-controls-button icon-arrow-left2 button-hover-icon"
+                                title="prev slide">
                         </button>
-                        <button class="about__slider-controls-button icon-arrow-right2" title="next slide">
+                        <button class="about__slider-controls-button icon-arrow-right2 button-hover-icon"
+                                title="next slide">
                         </button>
                     </div>
                 </div>
@@ -285,8 +288,8 @@
         <a id="gallery"></a>
         <h2 class="gallery__title section-title">Галерея</h2>
         <div class="gallery__controls">
-            <button class="gallery__controls-button icon-arrow-left2" title="prev slide"></button>
-            <button class="gallery__controls-button icon-arrow-right2" title="next slide"></button>
+            <button class="gallery__controls-button icon-arrow-left2 button-hover-icon" title="prev slide"></button>
+            <button class="gallery__controls-button icon-arrow-right2 button-hover-icon" title="next slide"></button>
         </div>
         <div class="gallery__images">
             <img class="gallery__image" src="img/gallery-image1.png" alt="Основное здание" height="432">
@@ -352,7 +355,7 @@
                     <input class="filter-panel__area" name="filter-area-min" type="text" placeholder="22,4" value="">
                     <div class="filter-panel__hyphen">-</div>
                     <input class="filter-panel__area" name="filter-area-max" type="text" placeholder="100,4" value="">
-                    <button class="filter-panel__submit" type="submit">Поиск</button>
+                    <button class="filter-panel__submit button-hover-text" type="submit">Поиск</button>
                 </div>
                 <a class="filter-panel__reset" href="#">Х&nbsp;&nbsp;очистить фильтр</a>
             </form>
@@ -424,14 +427,14 @@
             </div>
             <div class="filter-result__plan">
                 <div class="filter-result__navigation">
-                    <button class="filter-result__button icon-arrow-left2"></button>
-                    <button class="filter-result__button icon-arrow-right2"></button>
+                    <button class="filter-result__button icon-arrow-left2 button-hover-icon"></button>
+                    <button class="filter-result__button icon-arrow-right2 button-hover-icon"></button>
                 </div>
                 <div class="filter-result__plan-img">
                     <img src="img/layouts-schema1.png" alt="Планировка">
                 </div>
                 <div class="filter-result__navigation">
-                    <button class="filter-result__button icon-search"></button>
+                    <button class="filter-result__button icon-search button-hover-icon"></button>
                 </div>
             </div>
             <div class="filter-result__plan-description">
@@ -441,13 +444,16 @@
                     • Возможность свободной планировки;<br>
                     • Эко-материалы
                 </p>
-                <button class="filter-result__plan-download icon-floppy-disk">
+                <button class="filter-result__plan-download icon-floppy-disk button-hover-text">
                     <span>Скачать планировку</span>
                 </button>
-                <input type="tel" class="filter-result__plan-input-phone" placeholder="Введите Ваш телефон" required>
-                <button class="filter-result__plan-request-call icon-phone">
-                    <span>Заказать звонок</span>
-                </button>
+                <form action="?" method="post">
+                    <input type="tel" class="filter-result__plan-input-phone" placeholder="Введите Ваш телефон"
+                           required>
+                    <button class="filter-result__plan-request-call icon-phone button-hover-text">
+                        <span>Заказать звонок</span>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -467,7 +473,7 @@
                     <span>Я принимаю условия пользовательского соглашения и даю право на обработку моих персональных
                     данных</span></label>
                 <div class="spacer"></div>
-                <button type="submit" class="our-catalog__form-submit">
+                <button type="submit" class="our-catalog__form-submit button-hover-text">
                     Отправить заявку
                 </button>
             </form>
@@ -499,7 +505,7 @@
                 <p class="purchase-terms__descr-asterisk"><sup>*</sup>детальные условия акции Вы можите узнать
                     связавшись с нашим менеджером</p>
                 <div class="spacer"></div>
-                <button class="purchase-terms__descr-more-details">Узнать подробнее</button>
+                <button class="purchase-terms__descr-more-details button-hover-text">Узнать подробнее</button>
             </div>
         </div>
         <div class="purchase-terms__have-questions have-questions">
@@ -518,7 +524,7 @@
                         <input class="have-questions__content-form-input" type="text" name="name" placeholder="Имя">
                         <input class="have-questions__content-form-input" type="text" name="phone"
                                placeholder="Номер телефона">
-                        <button class="have-questions__content-form-submit" type="submit">Отправить</button>
+                        <button class="have-questions__content-form-submit button-hover-text" type="submit">Отправить</button>
                         <label class="have-questions__content-form-tac">
                             <input type="checkbox" name="tac" value="y">
                             <span>Я принимаю условия пользовательского соглашения и даю право на обработку моих персональных данных</span>
@@ -533,10 +539,51 @@
             </div>
         </div>
     </section>
+    <section class="construction-progress construction-progress-padding">
+        <a id="construction-progress"></a>
+        <h2 class="construction-progress__title section-title">Ход строительства</h2>
+        <div class="construction-progress__wrapper">
+            <select class="construction-progress__select-month" name="select-month" id="select-month">
+                <option value="1">январь</option>
+                <option value="2">февраль</option>
+            </select>
+            <div class="construction-progress__web">
+                <a class="construction-progress__web-link" href="#" title="online camera">
+                    Онлайн камера
+                </a>
+            </div>
+        </div>
+        <div class="construction-progress__slider progress-slider">
+            <div class="progress-slider__slide">
+                <img src="img/construction-progress-slide1.png" alt="Слайд 1" class="progress-slider__slide-img">
+                <p class="progress-slider__slide-description">Строительство комплекса Галилео продвигается быстрыми
+                    темпами</p>
+            </div>
+            <div class="progress-slider__slide">
+                <img src="img/construction-progress-slide2.png" alt="Слайд 1" class="progress-slider__slide-img">
+                <p class="progress-slider__slide-description progress-slider__slide-description_active">Строительство
+                    комплекса Галилео продвигается быстрыми темпами</p>
+            </div>
+            <div class="progress-slider__slide">
+                <img src="img/construction-progress-slide3.png" alt="Слайд 1" class="progress-slider__slide-img">
+                <p class="progress-slider__slide-description">Строительство комплекса Галилео продвигается быстрыми
+                    темпами</p>
+            </div>
+            <div class="progress-slider__controls">
+                <button class="progress-slider__controls-navigation icon-arrow-left2 button-hover-icon"></button>
+                <button class="progress-slider__controls-navigation icon-arrow-right2 button-hover-icon"></button>
+                <button class="progress-slider__controls-enlarge icon-enlarge button-hover-icon"></button>
+            </div>
+        </div>
+    </section>
+    <section class="documentation documentation-padding">
+        <a id="documentation"></a>
+        <h2 class="documentation-title section-title">документация</h2>
+
+    </section>
 </main>
 <footer class="container">
-    Затрачено времени - 4ч + 1.5 + 3 + 2 + 2 + 1 + 1 + 2
-    19:49 -
+    Затрачено времени (ч) - 4 + 2 + 3 + 2 + 2 + 1 + 1 + 2 + 6 + 2
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -550,6 +597,7 @@
                 $('.infrastru').css('background-image', 'url("' + img + '")');
             }
         });
+        $('#select-month').selectmenu();
     });
 </script>
 </body>
