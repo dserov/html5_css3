@@ -43,9 +43,9 @@
 .icon-checkmark:before {
   content: "\ea10";
 }
-.icon-arrow-right2:before {
+.icon-arrow-right:before {
   content: "\ea3c";
 }
-.icon-arrow-left2:before {
+.icon-arrow-left:before {
   content: "\ea40";
 }
