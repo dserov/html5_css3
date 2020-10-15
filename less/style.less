@@ -401,15 +401,13 @@ header.container {
     position: relative;
     &-left {
       width: 270px;
-      border-style: solid;
-      border-width: 8px 0 8px 8px;
-      border-color: @grey-dark1;
+      border: 8px solid @grey-dark1;
+      border-right: none;
     }
     &-right {
       width: 270px;
-      border-style: solid;
-      border-width: 8px 8px 8px 0;
-      border-color: @blue-light;
+      border: 8px solid @blue-light;
+      border-left: none;
     }
     &-content {
       width: 450px;
@@ -852,9 +850,8 @@ header.container {
     &-rows {
       flex-grow: 1;
       overflow-y: scroll;
-      border-style: solid;
-      border-color: @grey-dark1;
-      border-width: 0 1px 1px 1px;
+      border: 1px solid @grey-dark1;
+      border-top: none;
       font-size: 14px;
       line-height: 18px;
       text-align: center;
@@ -864,9 +861,9 @@ header.container {
     &-row {
       padding: 17px;
       display: flex;
-      border-style: solid;
-      border-color: @grey-dark1;
-      border-width: 0 1px 1px 0;
+      border: 1px solid @grey-dark1;
+      border-top: none;
+      border-left: none;
     }
     &-row:hover {
       color: #fff;
@@ -1154,14 +1151,12 @@ header.container {
     display: flex;
     justify-content: space-between;
     &-left {
-      border: 8px solid @grey-dark1;
-      border-width: 8px 0 0 0;
+      border-top: 8px solid @grey-dark1;
       width: 200px;
       height: 0;
     }
     &-right {
-      border: 8px solid @blue-light;
-      border-width: 8px 0 0 0;
+      border-top: 8px solid @blue-light;
       width: 636px;
       height: 0;
     }
@@ -1170,14 +1165,12 @@ header.container {
     display: flex;
     justify-content: space-between;
     &-left {
-      border: 8px solid @grey-dark1;
-      border-width: 8px 0 0 0;
+      border-bottom: 8px solid @grey-dark1;
       width: 636px;
       height: 0;
     }
     &-right {
-      border: 8px solid @blue-light;
-      border-width: 8px 0 0 0;
+      border-bottom: 8px solid @blue-light;
       width: 200px;
       height: 0;
     }
@@ -1185,14 +1178,12 @@ header.container {
   &__line-center {
     display: flex;
     &-left {
-      border: 8px solid @grey-dark1;
-      border-width: 0 0 0 8px;
+      border-left: 8px solid @grey-dark1;
       width: 0;
       height: 160px;
     }
     &-right {
-      border: 8px solid @blue-light;
-      border-width: 0 8px 0 0;
+      border-right: 8px solid @blue-light;
       width: 0;
       height: 160px;
     }
@@ -1374,6 +1365,7 @@ header.container {
 .documentation-padding {
   margin: 0 80px 120px;
 }
+
 .documentation {
 
 }
@@ -1426,7 +1418,7 @@ header.container {
   .myfont(normal, 10px);
   color: @grey-dark4;
   border: 1px solid @grey-dark4;
-  border-width: 0 1px 1px 1px;
+  border-top: none;
   cursor: pointer;
   &:hover {
     color: @black;

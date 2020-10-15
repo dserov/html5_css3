@@ -436,15 +436,13 @@ header.container {
 }
 .about__slider-left {
   width: 270px;
-  border-style: solid;
-  border-width: 8px 0 8px 8px;
-  border-color: #C4C4C4;
+  border: 8px solid #C4C4C4;
+  border-right: none;
 }
 .about__slider-right {
   width: 270px;
-  border-style: solid;
-  border-width: 8px 8px 8px 0;
-  border-color: #0094DF;
+  border: 8px solid #0094DF;
+  border-left: none;
 }
 .about__slider-content {
   width: 450px;
@@ -856,9 +854,8 @@ header.container {
 .filter-result__table-rows {
   flex-grow: 1;
   overflow-y: scroll;
-  border-style: solid;
-  border-color: #C4C4C4;
-  border-width: 0 1px 1px 1px;
+  border: 1px solid #C4C4C4;
+  border-top: none;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -868,9 +865,9 @@ header.container {
 .filter-result__table-row {
   padding: 17px;
   display: flex;
-  border-style: solid;
-  border-color: #C4C4C4;
-  border-width: 0 1px 1px 0;
+  border: 1px solid #C4C4C4;
+  border-top: none;
+  border-left: none;
 }
 .filter-result__table-row:hover {
   color: #fff;
@@ -1167,14 +1164,12 @@ header.container {
   justify-content: space-between;
 }
 .have-questions__line-top-left {
-  border: 8px solid #C4C4C4;
-  border-width: 8px 0 0 0;
+  border-top: 8px solid #C4C4C4;
   width: 200px;
   height: 0;
 }
 .have-questions__line-top-right {
-  border: 8px solid #0094DF;
-  border-width: 8px 0 0 0;
+  border-top: 8px solid #0094DF;
   width: 636px;
   height: 0;
 }
@@ -1183,14 +1178,12 @@ header.container {
   justify-content: space-between;
 }
 .have-questions__line-bottom-left {
-  border: 8px solid #C4C4C4;
-  border-width: 8px 0 0 0;
+  border-bottom: 8px solid #C4C4C4;
   width: 636px;
   height: 0;
 }
 .have-questions__line-bottom-right {
-  border: 8px solid #0094DF;
-  border-width: 8px 0 0 0;
+  border-bottom: 8px solid #0094DF;
   width: 200px;
   height: 0;
 }
@@ -1198,14 +1191,12 @@ header.container {
   display: flex;
 }
 .have-questions__line-center-left {
-  border: 8px solid #C4C4C4;
-  border-width: 0 0 0 8px;
+  border-left: 8px solid #C4C4C4;
   width: 0;
   height: 160px;
 }
 .have-questions__line-center-right {
-  border: 8px solid #0094DF;
-  border-width: 0 8px 0 0;
+  border-right: 8px solid #0094DF;
   width: 0;
   height: 160px;
 }
@@ -1434,7 +1425,7 @@ header.container {
   line-height: 12.33px;
   color: #7A7B77;
   border: 1px solid #7A7B77;
-  border-width: 0 1px 1px 1px;
+  border-top: none;
   cursor: pointer;
 }
 .ui-menu-item:hover {
