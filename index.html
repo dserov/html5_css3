@@ -38,41 +38,30 @@
                     <a class="navigation__link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        <div class="contacts logo-menu__contacts">
-            <ul class="contacts__list">
-                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
-                                                                                   src="img/phone.png" alt="phone"></a>
-                </li>
-                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
-                                                                                   src="img/whatsapp.png"
-                                                                                   alt="whatsapp"></a>
-                </li>
-                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
-                                                                                   src="img/viber.png" alt="viber"></a>
-                </li>
-                <li class="contacts__item"><a href="#" class="contacts__link"><img class="contacts__img"
-                                                                                   src="img/telegram.png"
-                                                                                   alt="telegram"></a>
-                </li>
-            </ul>
-            <span class="contacts__phone">+995 593 18 72 72</span>
-            <div class="contacts__address">
-                <span>г. Батуми, Аэропортское Шоссе 33</span>
+        <div class="top-contacts logo-menu__contacts">
+            <div class="top-contacts__list">
+                <a href="#" class="top-contacts__link"><img class="top-contacts__img"
+                                                            src="img/phone.png"
+                                                            alt="phone"></a>
+                <a href="#" class="top-contacts__link"><img class="top-contacts__img"
+                                                            src="img/whatsapp.png"
+                                                            alt="whatsapp"></a>
+                <a href="#" class="top-contacts__link"><img class="top-contacts__img"
+                                                            src="img/viber.png"
+                                                            alt="viber"></a>
+                <a href="#" class="top-contacts__link"><img class="top-contacts__img"
+                                                            src="img/telegram.png"
+                                                            alt="telegram"></a>
             </div>
-            <ul class="contacts__socseti-list">
-                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
-                                                                                                   src="img/facebook.png"
-                                                                                                   alt="facebook"></a>
-                </li>
-                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
-                                                                                                   src="img/instagram.png"
-                                                                                                   alt="instagram"></a>
-                </li>
-                <li class="contacts__socseti-item"><a href="#" class="contacts__socseti-link"><img class="contacts__img"
-                                                                                                   src="img/youtube.png"
-                                                                                                   alt="youtube"></a>
-                </li>
-            </ul>
+            <a class="top-contacts__phone" href="tel://+995593187272">+995 593 18 72 72</a>
+            <a class="top-contacts__address icon-location" href="https://goo.gl/maps/bs4thpmsYgPsScqTA">
+                г. Батуми, Аэропортское Шоссе 33
+            </a>
+            <div class="top-contacts__socseti-list">
+                <a href="#" class="top-contacts__socseti-link icon-facebook"></a>
+                <a href="#" class="top-contacts__socseti-link icon-instagram"></a>
+                <a href="#" class="top-contacts__socseti-link icon-youtube"></a>
+            </div>
         </div>
     </div>
     <div class="header-slider">
@@ -151,17 +140,17 @@
     </section>
     <section class="territory territory-padding">
         <h2 class="territory__title section-title">Территория</h2>
-        <ul class="territory__text">
-            <li class="territory__text-item">ЖК “Галилео”- это доступные квартиры в современном жилом комплексе для
+        <div class="territory__text">
+            <p class="territory__text-item">ЖК “Галилео”- это доступные квартиры в современном жилом комплексе для
                 жизни и отдыха. Квартиры продаются с готовым ремонтом (белом каркас), все материалы
                 сертифицированы,экологически чистые и прочные.
-            </li>
-            <li class="territory__text-item">Квартиры очень светлые и теплые, за счет правильного расположения дома и
+            </p>
+            <p class="territory__text-item">Квартиры очень светлые и теплые, за счет правильного расположения дома и
                 азимутальных углов при восходе и закате солнца.
                 Расстояние до моря <strong>750 метров</strong>, т.е. <strong>7 минут</strong> от моря. ЖК “Галилео”
                 <strong>9000 кв. метров</strong>, благоустройство:
-            </li>
-        </ul>
+            </p>
+        </div>
         <div class="territory__gallery">
             <div class="territory__gallery-image"><img src="img/territory-parking.png" alt="парковка" width="302"
                                                        height="552">
@@ -518,13 +507,14 @@
                 <div class="have-questions__content">
                     <div class="have-questions__content-wrp">
                         <h3 class="have-questions__content-wrp-title">Остались вопросы?</h3>
-                        <p class="have-questions__content-wrp-text">Заполните форму и мы свяжимся с Вами!</p>
+                        <p class="have-questions__content-wrp-text">Заполните форму и мы свяжемся с Вами!</p>
                     </div>
                     <form class="have-questions__content-form" action="?" method="post">
                         <input class="have-questions__content-form-input" type="text" name="name" placeholder="Имя">
                         <input class="have-questions__content-form-input" type="text" name="phone"
                                placeholder="Номер телефона">
-                        <button class="have-questions__content-form-submit button-hover-text" type="submit">Отправить</button>
+                        <button class="have-questions__content-form-submit button-hover-text" type="submit">Отправить
+                        </button>
                         <label class="have-questions__content-form-tac">
                             <input type="checkbox" name="tac" value="y">
                             <span>Я принимаю условия пользовательского соглашения и даю право на обработку моих персональных данных</span>
@@ -555,17 +545,22 @@
         </div>
         <div class="construction-progress__slider progress-slider">
             <div class="progress-slider__slide">
-                <img src="img/construction-progress-slide1.png" alt="Слайд 1" class="progress-slider__slide-img">
+                <img src="img/construction-progress-slide1.png" alt="Слайд 1" class="progress-slider__slide-img"
+                     width="273" height="200">
                 <p class="progress-slider__slide-description">Строительство комплекса Галилео продвигается быстрыми
                     темпами</p>
             </div>
-            <div class="progress-slider__slide">
-                <img src="img/construction-progress-slide2.png" alt="Слайд 1" class="progress-slider__slide-img">
+            <div class="progress-slider__slide progress-slider__slide_opened">
+                <!--<img src="img/construction-progress-slide2.png" alt="Слайд 1" class="progress-slider__slide-img" width="846" height="456">-->
+                <video class="progress-slider__slide-video"
+                       src="https://media.istockphoto.com/videos/experienced-engineers-working-on-the-construction-site-video-id1036333520"
+                       controls autoplay muted></video>
                 <p class="progress-slider__slide-description progress-slider__slide-description_active">Строительство
                     комплекса Галилео продвигается быстрыми темпами</p>
             </div>
             <div class="progress-slider__slide">
-                <img src="img/construction-progress-slide3.png" alt="Слайд 1" class="progress-slider__slide-img">
+                <img src="img/construction-progress-slide3.png" alt="Слайд 1" class="progress-slider__slide-img"
+                     width="273" height="200">
                 <p class="progress-slider__slide-description">Строительство комплекса Галилео продвигается быстрыми
                     темпами</p>
             </div>
@@ -578,17 +573,159 @@
     </section>
     <section class="documentation documentation-padding">
         <a id="documentation"></a>
-        <h2 class="documentation-title section-title">документация</h2>
-
+        <h2 class="documentation__title section-title">документация</h2>
+        <div class="documentation__wrapper">
+            <div class="documentation__list">
+                <a href="files/documentation.zip" class="documentation__link documentation__link_active"
+                   target="_blank">
+                    <p class="documentation__link-text">План здания</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Выписка ЕГРН</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Проектная декларация</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Технический паспорт</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Договор купли-продажи</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Разрешение на строительство</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+            </div>
+            <div class="documentation__list documentation__list_toggle">
+                <a href="files/documentation.zip" class="documentation__link documentation__link_active"
+                   target="_blank">
+                    <p class="documentation__link-text">План здания</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Выписка ЕГРН</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Проектная декларация</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Технический паспорт</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Договор купли-продажи</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+                <a href="files/documentation.zip" class="documentation__link" target="_blank">
+                    <p class="documentation__link-text">Разрешение на строительство</p>
+                    <span class="documentation__link-size">95 Кб</span>
+                </a>
+            </div>
+            <button class="documentation__button-toggle documentation__button-toggle_active" title="Щелкни меня">
+                Все документы
+            </button>
+        </div>
+    </section>
+    <section class="contacts">
+        <a id="contacts"></a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95487.5410723242!2d41.6030127!3d41.591193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678587ac5154a3%3A0xc7e816840a89e1b5!2z0JHQsNGC0YPQvNGB0LrQuNC5INC80LXQttC00YPQvdCw0YDQvtC00L3Ri9C5INCw0Y3RgNC-0L_QvtGA0YI!5e0!3m2!1sru!2sru!4v1602886710980!5m2!1sru!2sru"
+                width="1440" height="440" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        <div class="contacts__container">
+            <h2 class="contacts__title">контакты</h2>
+            <p class="contacts__text">адрес</p>
+            <a class="contacts__address" href="https://goo.gl/maps/bs4thpmsYgPsScqTA">
+                г. Батуми, Аэропортское Шоссе 33
+            </a>
+            <p class="contacts__text">телефон</p>
+            <ul class="contacts__list">
+                <li class="contacts__item"><a href="tel://+995593187272" target="_blank" class="contacts__link"><img
+                        class="contacts__img"
+                        src="img/phone.png"
+                        alt="phone"></a>
+                </li>
+                <li class="contacts__item"><a href="https://wa.me/995593187272" target="_blank"
+                                              class="contacts__link"><img class="contacts__img"
+                                                                          src="img/whatsapp.png"
+                                                                          alt="whatsapp"></a>
+                </li>
+                <li class="contacts__item"><a href="viber://add?number=%2b995593187272" target="_blank"
+                                              class="contacts__link"><img class="contacts__img"
+                                                                          src="img/viber.png"
+                                                                          alt="viber"></a>
+                </li>
+                <li class="contacts__item"><a href="tg://resolve?domain=galileo" target="_blank" class="contacts__link"><img
+                        class="contacts__img"
+                        src="img/telegram.png"
+                        alt="telegram"></a>
+                </li>
+            </ul>
+            <a href="tel://+995593187272" target="_blank" class="contacts__phone">+995 593 18 72 72</a>
+        </div>
     </section>
 </main>
-<footer class="container">
-    Затрачено времени (ч) - 4 + 2 + 3 + 2 + 2 + 1 + 1 + 2 + 6 + 2
+<footer class="container footer">
+    <div class="footer__up-wrapper">
+        <ul class="footer__navigation-list">
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#about">О проекте</a>
+            </li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#concept">Концепция</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#gallery">Галерея</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#layouts">Планировки</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#construction-progress">Ход строительства</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#purchase-terms">Акция</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#documentation">Документация</a></li>
+            <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="footer__contacts">
+            <a class="footer__contacts-address icon-location" href="https://goo.gl/maps/bs4thpmsYgPsScqTA">
+                г. Батуми, Аэропортское Шоссе 33
+            </a>
+            <a class="footer__contacts-email icon-envelop" href="mailto://sale@galileo.ge">
+                sale@galileo.ge
+            </a>
+            <div class="footer__contacts-socseti-list">
+                <a href="#" class="footer__contacts-socseti-link icon-facebook"></a>
+                <a href="#" class="footer__contacts-socseti-link icon-instagram"></a>
+                <a href="#" class="footer__contacts-socseti-link icon-youtube"></a>
+            </div>
+            <button class="footer__contacts-callback button-hover-text">Заказать звонок</button>
+        </div>
+    </div>
+    <div class="footer__bottom-list">
+        <p class="footer__bottom-item">Все права защищены</p>
+        <p class="footer__bottom-item">Политика конфиденциальности</p>
+        <p class="footer__bottom-item">2020</p>
+        <p class="footer__bottom-item">Создано Syndicate</p>
+    </div>
 </footer>
+<!--Затрачено времени (ч) - 33-->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function () {
+        // no display on default
+        $('.documentation__list_toggle').css({"display": "none"});
+        $('.documentation__button-toggle').click(function (e) {
+            $(this).toggleClass('documentation__button-toggle_active');
+            $('.documentation__list.documentation__list_toggle').slideToggle('slow');
+        });
         $('#infrastru-tabs').tabs({
             activate: function (event, ui) {
                 let id = ui.newPanel[0].id;
@@ -600,7 +737,7 @@
         $('#select-month').selectmenu();
         let $root = $('html, body');
 
-        $('a[href^="#"]').click(function() {
+        $('a[href^="#"]').click(function () {
             let href = $.attr(this, 'href');
 
             $root.animate({
