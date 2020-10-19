@@ -31,6 +31,12 @@
 .icon-phone:before {
   content: "\e942";
 }
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
 .icon-floppy-disk:before {
   content: "\e962";
 }
@@ -48,4 +54,16 @@
 }
 .icon-arrow-left:before {
   content: "\ea40";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-youtube:before {
+  content: "\ea9d";
 }
