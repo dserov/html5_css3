@@ -18,7 +18,7 @@ $(document).ready(function () {
     $('#select-month').selectmenu();
 
     let $root = $('html, body');
-    $('a[href^="#"]').click(function () {
+    $('a[href^="#"].page-anchor').click(function () {
         let href = $.attr(this, 'href');
 
         $root.animate({

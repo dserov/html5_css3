@@ -101,8 +101,8 @@
 </header>
 <main class="container">
     <section class="about about-padding">
+        <a id="about" class="page-anchor"></a>
         <h2 class="about__title section-title">О проекте</h2>
-        <a id="about"></a>
         <div class="about__wrapper">
             <div class="about__video">
                 <h3 class="about__video-title">Жилой квартал “Галилео” – </h3>
@@ -272,8 +272,8 @@
         </div>
     </section>
     <section class="gallery gallery-padding">
+        <a id="gallery" class="page-anchor"></a>
         <h2 class="gallery__title section-title">Галерея</h2>
-        <a id="gallery"></a>
         <div class="gallery__controls">
             <button class="gallery__controls-button icon-arrow-left button-hover-icon" title="prev slide"></button>
             <button class="gallery__controls-button icon-arrow-right button-hover-icon" title="next slide"></button>
@@ -325,8 +325,8 @@
         </div>
     </section>
     <section class="layouts layouts-padding">
+        <a id="layouts" class="page-anchor"></a>
         <h2 class="layouts__title section-title">Планировки</h2>
-        <a id="layouts"></a>
         <div class="layouts__filter-panel filter-panel">
             <form method="post" action="/filter.php">
                 <div class="filter-panel__labels">
@@ -468,7 +468,7 @@
         </div>
     </section>
     <section class="purchase-terms purchase-terms-padding">
-        <a id="purchase-terms"></a>
+        <a id="purchase-terms" class="page-anchor"></a>
         <h2 class="purchase-terms__title section-title">условия покупки</h2>
         <div class="purchase-terms__items">
             <div class="purchase-terms__item icon-calendar">
@@ -527,7 +527,7 @@
         </div>
     </section>
     <section class="construction-progress construction-progress-padding">
-        <a id="construction-progress"></a>
+        <a id="construction-progress" class="page-anchor"></a>
         <h2 class="construction-progress__title section-title">Ход строительства</h2>
         <div class="construction-progress__wrapper">
             <select class="construction-progress__select-month" name="select-month" id="select-month">
@@ -569,7 +569,7 @@
         </div>
     </section>
     <section class="documentation documentation-padding">
-        <a id="documentation"></a>
+        <a id="documentation" class="page-anchor"></a>
         <h2 class="documentation__title section-title">документация</h2>
         <div class="documentation__wrapper">
             <div class="documentation__list">
@@ -632,7 +632,7 @@
         </div>
     </section>
     <section class="contacts">
-        <a id="contacts"></a>
+        <a id="contacts" class="page-anchor"></a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d95487.5410723242!2d41.6030127!3d41.591193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678587ac5154a3%3A0xc7e816840a89e1b5!2z0JHQsNGC0YPQvNGB0LrQuNC5INC80LXQttC00YPQvdCw0YDQvtC00L3Ri9C5INCw0Y3RgNC-0L_QvtGA0YI!5e0!3m2!1sru!2sru!4v1602886710980!5m2!1sru!2sru"
                 width="1440" height="440" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
@@ -671,25 +671,26 @@
 </main>
 <footer class="container footer">
     <div class="footer__up-wrapper">
-        <ul class="footer__navigation-list">
-            <li class="footer__navigation-item">
+        <div class="footer__logo icon-color-logo"></div>
+        <nav class="footer__navigation-list">
+            <span class="footer__navigation-item">
                 <a class="footer__navigation-link" href="#about">О проекте</a>
-            </li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#concept">Концепция</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#gallery">Галерея</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#layouts">Планировки</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#construction-progress">Ход строительства</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#purchase-terms">Акция</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#documentation">Документация</a></li>
-            <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#contacts">Контакты</a></li>
-        </ul>
+            </span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#concept">Концепция</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#gallery">Галерея</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#layouts">Планировки</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#construction-progress">Ход строительства</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#purchase-terms">Акция</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#documentation">Документация</a></span>
+            <span class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#contacts">Контакты</a></span>
+        </nav>
         <div class="footer__contacts">
             <a class="footer__contacts-address icon-location" href="https://goo.gl/maps/bs4thpmsYgPsScqTA">
                 г. Батуми, Аэропортское Шоссе 33
